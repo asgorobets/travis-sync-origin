@@ -3,11 +3,7 @@ language: php
 php:
   - 5.6
 
-before_install:
-  - cp .netrc ~
-  - chmod 600 .netrc
-
-script: true
+script: true # Actually we need to run any tests and code sniffs here.
 
 after_success:
   - sh deploy.sh
